@@ -1,4 +1,5 @@
 FROM ruby:3.1.4-bullseye
+# 16.04.24 index.exp.railsc.ru/abak-press/docker-ruby:test
 
 RUN sed -i 's/mozilla\/DST_Root_CA_X3\.crt/!mozilla\/DST_Root_CA_X3.crt/' /etc/ca-certificates.conf \
   && update-ca-certificates
